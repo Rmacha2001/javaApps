@@ -1,18 +1,19 @@
+import java.util.Scanner;
 public class sum {
     
     public static void main(String[] args) 
     {
-        int num1=10;
-        int num2=20;
+        Scanner scanner =new Scanner(System.in);
+        //input
+        System.out.println("Enter first number= ");
+        int num1= scanner.nextInt();
 
-        int sum= add(num1,num2);
+        System.out.println("Enter second number= ");
+        int num2 = scanner.nextInt();
+        //logic
+        int sum = num1+num2;
+        System.out.println("sum = "+sum);
 
-        System.out.println("sum= "+sum);
-
-    }
-    public static int add(int a,int b)
-    {
-    int result = a + b;
-    return result;
+        scanner.close();
     }
 }

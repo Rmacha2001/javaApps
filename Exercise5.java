@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Exercise5 {
     public static void main(String[] args) {
         int num =-2;
@@ -57,11 +59,14 @@ public class Exercise5 {
         {
             System.out.println(i);
         }
-        Scanner scanner = new Scanner (System.in);
-        int num=scanner.nextint();
-        while(num!=0)
-        {
-            System.out.println("you entered= "+num);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter numbers (0 to stop):");
+        int input = scanner.nextInt();
+
+        while (input != 0) {
+            System.out.println("You entered: " + input);
+            input = scanner.nextInt();
         }
     }
     
